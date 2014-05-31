@@ -35,6 +35,12 @@ div.wrapper {
   margin: 30px auto;
 }
 
+@media (min-width: 700px) {
+  div.wrapper {
+    margin-top: 130px;
+  }
+}
+
 div.icons {
   text-align: center;
   margin: 0 auto;
