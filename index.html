@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hi there!</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrapper">
-          <div class="presentation">
-              <img src="img/annie.jpg"/>
-              <h1>ANNIE THORELL</h1>
-          </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-          <div class="icons">
-              <a href="https://twitter.com/a_thorell" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-              <a href="http://instagram.com/a_thorell" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-              <a href="http://se.linkedin.com/in/anniethorell/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-              <a href="mailto:annie.thorell@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
-          </div>
-          <!--
-          <div class="text">
-              <a class="text" href="" target="_blank">BLOG</a>
-          </div>
-          <div class="icons">
-              <a href="" target="_blank"><i class="fa fa-arrow-circle-o-right fa-2x"></i></a>
-          </div>
-          -->
+    <title>Hi there!</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>  
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row centered">
+        <div class="logo">
+          <img src="assets/img/annie.jpg"></img>
         </div>
-    </body>
+      </div>
+  		<div class="row centered">
+  			<h1>ANNIE THORELL</h1>
+  		</div>
+  		<div class="row centered">
+				<a href="http://twitter.com/a_thorell"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="se.linkedin.com/in/anniethorell/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        <a href="http://instagram.com/a_thorell"><i class="fa fa-instagram fa-2x"></i></a>
+				<a href="mailto:annie.thorell@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+		  </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        var change_header = function() {
+          $('h1').toggleClass('new');
+          console.log("change_header");
+        }
+        $('h1').click(change_header);
+        $('h1').mouseenter(change_header);
+      });
+    </script>
+
+  </body>
 </html>

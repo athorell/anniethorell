@@ -1,0 +1,77 @@
+body {
+  background-color: #e15444;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+
+h1 {
+  font-family: 'Gilda Display', serif;
+  font-weight: lighter;
+  font-size: 30px;
+  color: white;
+  border: 2px solid white;
+  width: 320px;
+  margin: auto;
+  padding: 13px 10px 10px 10px;
+  box-sizing: border-box;
+  -webkit-transition: background-color 3s, color 2s;
+  -moz-transition: background-color 3s, color 2s;
+  -ms-transition: background-color 3s, color 2s;
+  -o-transition: background-color 3s, color 2s;
+}
+
+.new {
+  background-color: white;
+  color: #e15444;
+  -webkit-transition: background-color 3s, color 2s;
+  -moz-transition: background-color 3s, color 2s;
+  -ms-transition: background-color 3s, color 2s;
+  -o-transition: background-color 3s, color 2s;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 30px;
+}
+
+a {
+  color: white;
+  word-wrap: break-word;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+}
+
+a:hover,
+a:focus {
+  color: white;
+  opacity: 0.8;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+}
+
+.logo {
+	text-align: center;
+	margin-top: 60px;
+}
+
+img {
+  border-radius: 1000px;
+  border: 2px solid white;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+i {
+	font-size: 26px;
+	padding: 12px;
+}
