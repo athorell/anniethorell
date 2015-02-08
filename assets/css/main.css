@@ -1,9 +1,9 @@
 body {
   background-color: #e15444;
-    font-family: 'Lato';
-    font-weight: 300;
-    font-size: 16px;
-    color: white;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
 }
 
 h1 {
@@ -48,8 +48,7 @@ a {
 
 a:hover,
 a:focus {
-  color: white;
-  opacity: 0.8;
+  color: #FDE3A7;
   -webkit-transition: color 1s;
   -moz-transition: color 1s;
   -ms-transition: color 1s;
@@ -74,4 +73,16 @@ img {
 i {
 	font-size: 26px;
 	padding: 12px;
+}
+
+.second {
+  margin-top: 0px;
+}
+
+.line {
+  border-bottom: 1px solid white;
+  text-align: center;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
