@@ -1,5 +1,5 @@
 body {
-  background-color: #e15444;
+  background-color: rgb(224, 130, 131);
   font-family: 'Lato';
   font-weight: 300;
   font-size: 16px;
@@ -24,7 +24,7 @@ h1 {
 
 .new {
   background-color: white;
-  color: #e15444;
+  color: rgb(224, 130, 131);
   -webkit-transition: background-color 3s, color 2s;
   -moz-transition: background-color 3s, color 2s;
   -ms-transition: background-color 3s, color 2s;
