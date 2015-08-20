@@ -55,6 +55,14 @@
           var link = el.attr('href');
           window.location = link;
         });
+
+        //Analytics event tracking
+        $('a .fa-twitter').click(ga('send', 'event', 'twitter', 'click'));
+        $('a .fa-instagram').click(ga('send', 'event', 'instagram', 'click'));
+        $('a .fa-medium').click(ga('send', 'event', 'medium', 'click'));
+        $('a .fa-linkedin-square').click(ga('send', 'event', 'linkedin', 'click'));
+        $('a .fa-github').click(ga('send', 'event', 'github', 'click'));
+        $('a .fa-envelope').click(ga('send', 'event', 'envelope', 'click'));
       });
     </script>
     <script>
