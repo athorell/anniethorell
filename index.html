@@ -48,6 +48,13 @@
         }
         $('h1').click(change_header);
         $('h1').mouseenter(change_header);
+
+        //Fix iOS double tap behaviour
+        $('a').on('click touchend', function(e) {
+          var el = $(this);
+          var link = el.attr('href');
+          window.location = link;
+        });
       });
     </script>
     <script>
