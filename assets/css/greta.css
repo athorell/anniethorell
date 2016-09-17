@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  background-color: rgba(254, 233, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.out {
+  transform: translateX(-60vw);
+}
+
+.circle1 {
+  z-index: 1;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  /*background-color: rgba(100, 0, 88, 1);*/
+  background-color: black;
+  transition: all 1s ease;
+}
+
+.circle1-logo {
+  transform: translateY(55px) translateX(5px);
+}
+
+.circle2 {
+  z-index: 2;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  /*background-color: rgba(1, 192, 255, 1);*/
+  background-color: black;
+  transition: all 1s ease;
+}
+
+.circle2-logo {
+  transform: translateY(-55px) translateX(-5px);
+}
+
+.circle3 {
+  z-index: 3;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  /*background-color: rgba(109, 219, 255, 1);*/
+  background-color: black;
+  transition: all 1s ease;
+}
+
+.circle3-logo {
+  transform: translateY(-102px) translateX(50px);
+}
+
+.circle4 {
+  z-index: 4;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  /*background-color: rgba(254, 44, 127, 0.5);*/
+  background-color: black;
+  transition: all 1s ease;
+}
+
+.circle4-logo {
+  width: 105px;
+  transform: translateY(30px) translateX(-23px);
+}

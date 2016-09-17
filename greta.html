@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Greta</title>
+
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/greta.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="circle1 out"></div>
+    <div class="circle2 out"></div>
+    <div class="circle3 out"></div>
+    <div class="circle4 out"></div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+      $(function() {
+        setTimeout(function() {
+          $('.circle1').removeClass('out');
+        }, 100);
+        setTimeout(function() {
+          $('.circle2').removeClass('out');
+        }, 400);
+        setTimeout(function() {
+          $('.circle3').removeClass('out');
+        }, 600);
+        setTimeout(function() {
+          $('.circle4').removeClass('out');
+        }, 800);
+        
+        var logo = function() {
+          $('.circle1').toggleClass('circle1-logo');
+          $('.circle2').toggleClass('circle2-logo');
+          $('.circle3').toggleClass('circle3-logo');
+          $('.circle4').toggleClass('circle4-logo');
+        }
+        $('body').click(logo);
+
+        //Fix iOS double tap behaviour
+        $('a').on('click touchend', function(e) {
+          var el = $(this);
+          var link = el.attr('href');
+          window.location = link;
+        });
+      });
+    </script>
+  </body>
+</html>
