@@ -4,59 +4,67 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png?2">
 
-    <title>Hi there!</title>
+    <title>Annie :D</title>
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" id="gretaScript" src="https://cdn.greta.io/greta.min.js" data-ac="b6ac5febaf1a37438df4f06763ecfd1e"></script>
   </head>
 
   <body>
-    <div class="container">
-      <div class="row centered">
-        <div class="logo">
-          <img src="assets/img/annie.jpg"></img>
-        </div>
-      </div>
-  		<div class="row centered">
-  			<h1>ANNIE THORELL</h1>
-  		</div>
-  		<div class="row centered">
-				<a href="http://twitter.com/a_thorell"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="http://instagram.com/a_thorell"><i class="fa fa-instagram fa-2x"></i></a>
-        <a href="https://medium.com/@a_thorell"><i class="fa fa-medium fa-2x"></i></a>
-		  </div>
-      <div class="line">
-      </div>
-      <div class="row centered second">
-        <a href="https://se.linkedin.com/in/anniethorell"><i class="fa fa-linkedin-square fa-2x"></i></a>
-        <a href="http://github.com/athorell"><i class="fa fa fa-github fa-2x"></i></a>
-        <a href="mailto:annie.thorell@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+    <div class="hi blue-section">
+      <div>
+        Hi there,
       </div>
     </div>
-
+    <div class="bio white-section">
+      <div class="text">
+        <div class="name">
+          My name is Annie Thorell
+        </div>
+        <div>
+          I'm a frontend engineer with a passion for
+          usability and design. Currently I'm working at
+          <a class="link greta" href="http://greta.io">Greta.io</a> where we
+          build tech that upgrade the internet.
+        </div>
+      </div>
+    </div>
+    <div class="links blue-section">
+      <div>
+        Find me on the internet here:
+      </div>
+      <ul>
+        <li><a class="link" href="http://github.com/athorell">github</a></li>
+        <li><a class="link" href="http://twitter.com/a_thorell">twitter</a></li>
+        <li><a class="link" href="https://se.linkedin.com/in/anniethorell">linkedin</a></li>
+        <li><a class="link" href="http://instagram.com/a_thorell">instagram</a></li>
+        <li><a class="link" href="https://medium.com/@a_thorell">medium</a></li>
+        <li><a class="link" href="mailto:annie.thorell@gmail.com">email</a></li>
+      </ul>
+    </div>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script>
       $(function() {
-        var change_header = function() {
-          $('h1').toggleClass('new');
-        }
-        $('h1').click(change_header);
-        $('h1').mouseenter(change_header);
-
-        //Fix iOS double tap behaviour
+        // Fix iOS double tap behaviour
         $('a').on('click touchend', function(e) {
           var el = $(this);
           var link = el.attr('href');
           window.location = link;
         });
 
-        //Analytics event tracking
+        $('.greta').on('mouseenter', function(e) {
+          $('.bio').toggleClass('pink-section');
+        });
+
+        $('.greta').on('mouseleave', function(e) {
+          $('.bio').toggleClass('pink-section');
+        });
+
+        // Analytics event tracking
         $('a .fa-twitter').click(ga('send', 'event', 'twitter', 'click'));
         $('a .fa-instagram').click(ga('send', 'event', 'instagram', 'click'));
         $('a .fa-medium').click(ga('send', 'event', 'medium', 'click'));
