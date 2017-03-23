@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Help me choose!</title>
+
+    <link href="assets/css/choose_basic.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1 class="fade">Help me choose between..</h1>
+    <div class="inputSection">
+      <div class="inputs">
+        <input placeholder="Something"></input>
+      </div>
+      <div class="addOption">
+        Add
+      </div>
+    </div>
+    <div class="resultSection"></div>
+    <button class="submit">Go!</button>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+        var options = []
+
+        var add_option = function() {
+          $('.inputs').append('<input class="focus fade"></input>')
+          $('.focus').focus()
+          $('input.focus.fade').addClass('in')
+        }
+
+        var submit = function() {
+          $('.inputSection').hide()
+          $('.resultSection').css('display', 'flex')
+          $('input').each(function() {
+            if ($(this).val() !== '') {
+              options.push($(this).val())
+            }
+          })
+          var winner = options[Math.floor(Math.random() * options.length)]
+          $('.resultSection').text(winner)
+        }
+
+        $('.addOption').click(add_option)
+        $('button').click(submit)
+      });
+    </script>
+  </body>
+</html>
