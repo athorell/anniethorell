@@ -41,7 +41,7 @@
           $('.focus').focus()
           setTimeout(function() {
             $('input.focus.fade').addClass('in')
-          }, 500)
+          }, 100)
         }
 
         var start_over = function() {
@@ -56,11 +56,9 @@
           $('.focus').focus()
           $('button').text('Go!')
           $('button').click(submit)
-          setTimeout(function() {
-            $('h1').addClass('in')
-            $('.inputSection').addClass('in')
-            $('.submit').addClass('in')
-          }, 300)
+          $('h1').addClass('in')
+          $('.inputSection').addClass('in')
+          $('.submit').addClass('in')
         }
 
         var submit = function() {

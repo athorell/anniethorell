@@ -77,6 +77,11 @@ input {
   transform: scale(1.05);
 }
 
+.addOption:focus,
+.addOption:active {
+  outline: none;
+}
+
 .line {
   height: 2px;
   width: 30px;
