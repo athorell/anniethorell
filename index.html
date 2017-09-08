@@ -47,39 +47,14 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script>
       $(function() {
-        // Fix iOS double tap behaviour
-        $('a').on('click touchend', function(e) {
-          var el = $(this);
-          var link = el.attr('href');
-          window.location = link;
-        });
-
         $('.iteam').on('mouseenter', function(e) {
-          $('.bio').toggleClass('pink-section');
-        });
+          $('.bio').toggleClass('pink-section')
+        })
 
         $('.iteam').on('mouseleave', function(e) {
-          $('.bio').toggleClass('pink-section');
-        });
-
-        // Analytics event tracking
-        $('a .fa-twitter').click(ga('send', 'event', 'twitter', 'click'));
-        $('a .fa-instagram').click(ga('send', 'event', 'instagram', 'click'));
-        $('a .fa-medium').click(ga('send', 'event', 'medium', 'click'));
-        $('a .fa-linkedin-square').click(ga('send', 'event', 'linkedin', 'click'));
-        $('a .fa-github').click(ga('send', 'event', 'github', 'click'));
-        $('a .fa-envelope').click(ga('send', 'event', 'envelope', 'click'));
-      });
+          $('.bio').toggleClass('pink-section')
+        })
+      })
     </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-56116124-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-
   </body>
 </html>
