@@ -17,6 +17,11 @@ h3 {
   padding: 10%;
 }
 
+.blue-section.hi,
+.blue-section.bye {
+  padding: 0px;
+}
+
 .blue-section ::selection,
 .blue-section a ::selection,
 .blue-section a:hover ::selection {
