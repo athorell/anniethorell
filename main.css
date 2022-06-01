@@ -189,4 +189,8 @@ li {
   .skills .skills-grid {
     grid-template-columns: 100%;
   }
+
+  .skills .heading {
+    margin-top: 10%;
+  }
 }
