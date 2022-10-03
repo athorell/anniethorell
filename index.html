@@ -6,102 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/ico/favicon.png?2">
 
-    <title>Annie :D</title>
+    <title>athorell</title>
 
     <link href="./main.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="hi blue-section">
-      <div>
-        Hi there,
-      </div>
-    </div>
-    <div class="bio white-section">
+    <section class="above-fold">
+      <h1> Hi there, I'm Annie Thorell.</h1>
       <div class="text">
-        <div class="name">
-          My name is Annie Thorell
-        </div>
-        <div>
-          I'm a frontend engineer skilled in product management, UX and UI.
-          I get really excited about well executed visions, great products and the
-          motivation we as human beings find in our work. I’m a highly analytical person who can
-          navigate both business, tech and user needs in my problem solving and prioritization.
-          <span class="highlight">My super power is my ability to find structure in chaos</span>
-          and use a common set of rules or goals to navigate the road ahead.
-        </div>
+        I’m a tech and product person driven by curiousity, passion and a
+        <a href="https://open.spotify.com/playlist/5h9XztZpjHsB8dlIW7hHAk?si=4rqk5KQ5S-S_bAoxzmheWQ">complex mix of music</a>.
       </div>
-    </div>
-    <div class="key-skills blue-section">
-      <div class="heading">
-        Key skills
+      <div class="arrow">
+        <a href="#about">
+          <img src="./assets/arrow.png"/>
+        </a>
       </div>
-      <ul>
-        <li>analytical problem solver</li>
-        <li>engaging team player</li>
-        <li>KPI focused</li>
-        <li>navigate easily between high level and intricate detail</li>
-      </ul>
-    </div>
-    <div class="skills white-section">
-      <div class="heading">
-        What I know
+    </section>
+    <section class="about" id="about">
+      <div class="text">
+        <p>
+          I’m a developer by heart, but have been seeking the bigger
+          picture in everything I've done. I love tech for what it can do
+          for its user, and  always put the user front and center in
+          my work.
+        </p>
+        <p>
+          I understand how UX, design, code and business have to work in
+          symbiosis to deliver great products, and have worked hands on
+          with all these crafts.
+        </p>
+        <p>
+          I navigate comfortably between long term and short term goals,
+          and can balance vision, strategy and hands-on todos.
+        </p>
+        <p>
+          My superpower is my ability to find structure in chaos.
+        </p>
       </div>
+      <div class="arrow">
+        <a href="#skills">
+          <img src="./assets/arrow.png"/>
+        </a>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h2>What I know</h2>
       <div class="skills-grid">
         <div class="skill">
-          <h3>Tech</h3>
           <div div class="skill-description">
-            I've studied Computer Science at KTH in Stockholm and worked as a frontend engineer
-            in startups for most of my career. I know how to work productively in a tech team, and
-            that code only create value once it's out in production.
+            <span class="skill-category">User.</span>
+            To understand how to build a product that is successful with the
+            user, I look at qualitative and quantitative data. Metrics build a
+            picture, talking to a user and understanding the world around
+            him/her tell the whole story. Beyond data, I'll use my gut feeling
+            to take the product towards it's vision.
           </div> 
         </div>
         <div class="skill">
-          <h3>Product</h3>
           <div div class="skill-description">
-            I understand what makes a great product and how to break out KPIs and strategies
-            that will drive work towards a product vision. I have an eye for the details, and know how
-            to derive information from quantitative and qualitative data.
+            <span class="skill-category">Tech.</span>
+            With my developer background, I comfortably navigate technical
+            needs and constraints in my prioritisation. I know how to
+            leverage tech to take a product to the next level. I understand the needs
+            of a tech team, and can have discussions on the right level to find
+            the best way forward together.
           </div> 
         </div>
         <div class="skill">
-          <h3>Business</h3>
           <div div class="skill-description">
-            Having co-founded my own company, I know how to go from spreadsheet to day to day business. 
-            I can navigate between the different layers of an organization, and know
-            how to consider business goals in problem solving and prioritization.
+            <span class="skill-category">Business.</span>
+            I have run business of my own and know how to navigate between
+            a spreadsheet and the reality of the product. The
+            needs of the business interfer with the product in many
+            ways, and I know how to be pragmantic and build with what we’ve got
+            while not loosing site of our north star.
           </div> 
         </div>
       </div>
-    </div>
-    <div class="links blue-section">
-      <div class="heading">
-        Useful links
+      <div class="arrow">
+        <a href="#links">
+          <img src="./assets/arrow.png"/>
+        </a>
       </div>
+    </section>
+    <section class="links" id="links">
+      <h2>Useful links</h2>
       <ul>
+        <li><a class="link" href="mailto:annie.thorell@gmail.com">email</a></li>
         <li><a class="link" href="https://www.craft.do/s/hhJwzAKW1kpTsq">resume</a></li>
         <li><a class="link" href="https://www.craft.do/s/T5OxrWd1CtgVYu">cover letter</a></li>
-        <li><a class="link" href="http://twitter.com/a_thorell">twitter</a></li>
         <li><a class="link" href="https://se.linkedin.com/in/anniethorell">linkedin</a></li>
-        <li><a class="link" href="mailto:annie.thorell@gmail.com">email</a></li>
+        <li><a class="link" href="http://twitter.com/a_thorell">twitter</a></li>
       </ul>
-    </div>
-    <div class="bye white-section">
-      <div>
-        Bye 👋
+      <div class="backToTop">
+        <a href="#">Back to top</a>
       </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script>
-      $(function() {
-        $('.highlight').on('mouseenter', function(e) {
-          $('.bio').toggleClass('pink-section')
-        })
-
-        $('.highlight').on('mouseleave', function(e) {
-          $('.bio').toggleClass('pink-section')
-        })
-      })
-    </script>
+    </section>
   </body>
 </html>
